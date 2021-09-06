@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attempt 1</title>
+</head>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        :root{
+            --navbar-height: 59px;
+        }
+        #navbar::before{
+            content: "";
+            background-color: black;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.4;
+        }
+        #navbar{
+            display: flex;
+            position: relative;
+            align-items: center;
+            justify-content: center;
+            height: 16vh;
+        }
+
+        #navbar ul{
+            display: flex;
+        }
+        #navbar ul li{
+            color: white;
+            list-style: none;
+            font-size: 1.3rem;
+        }
+
+        #navbar ul li a{
+            color: white;
+            display: block;
+            padding: 3px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+        }
+        #navbar ul li a:hover{
+            color: black;
+            background-color: white;
+        }
+
+        .cont{
+            display: flex;
+            flex-direction: column;
+            padding: 3px 20px;
+            justify-content: center;
+        }
+
+        #chart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 80vw;
+            height: 200px;
+            border: 2px solid black;
+        }
+    </style>
+<body>
+    <nav id="navbar">
+        <ul>
+            <li class="item"><a href="#">Search Stock</a> </li>
+            <li class="item"><a href="#">Search History</a> </li>
+        </ul>
+    </nav>
+    <div class="cont">
+        <div id="stockSymbol">Stock Symbol <input type="text"></div>    
+        <div id="date">Date
+            <div id="from">From:<input type="date" id="inputFrom"></div>
+            <div id="to">To:<input type="date" id="InputTo"></div>
+        </div>
+    </div>
+    <div id="chart"></div> <!-- for showing chart -->
+    <div id="more">To Know More About The Company <a href="#" target="_blank">Click Here</a></div>
+    <!-- <div id="history">Search History</div> -->
+</body>
+</html>
