@@ -18,13 +18,23 @@
             <li class="item"><a href="#">Search History</a> </li>
         </ul>
     </nav>
-    <div class="cont">
-        <div id="stockSymbol">Stock Symbol : &nbsp;<input type="text"></div>    
-        <div id="date">Date :-
-            <div id="from">From :&nbsp;<input type="date" id="inputFrom"></div>
-            <div id="to">To : &nbsp;<input type="date" id="InputTo"></div>
+    <form action="backend.php" method="post">
+        <div class="imgcontainer">
+            <img src="img1.png" alt="Img1" class="img1">
         </div>
-    </div>
+
+        <div class="cont">
+            <div id="stockSymbol"><b> Stock Symbol :</b><input type="text"></div>    
+            <div id="date"><b> Date :-</b>
+                <div id="from">From :&nbsp;</div>
+                <input type="date" id="inputFrom">
+
+                <div id="to">To : &nbsp;</div>
+                <input type="date" id="InputTo">
+            </div>
+            <div class="sub"><button type="submit" id ="submit">Search</button></div>
+        </div>
+    </form>
     <div id="chart"></div> <!-- for showing chart -->
     <div id="more">To Know More About The Company <a href="#" target="_blank">Click Here</a></div>
     <!-- <div id="history">Search History</div> -->

@@ -5,6 +5,13 @@
 :root{
     --navbar-height: 59px;
 }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+form {
+    border: 3px solid #b6afaf;
+}
 #navbar::before{
     content: "";
     background-color: rgb(117, 222, 230);
@@ -28,7 +35,7 @@
 #navbar ul li{
     color: white;
     list-style: none;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 #navbar ul li a{
@@ -45,33 +52,63 @@
     background-color: white;
 }
 
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+
+.img1{
+    width: 15vw;
+    border-radius: 30%;
+}
 .cont{
-    /* display: flex;
-    flex-direction: column; */
+    display: block;
     padding: 20px 20px;
-    /* background-color: rgb(234, 215, 250); */
-    /* height: 40vh; */
+    align-items: center;
+    justify-content: center; 
+    border: 2px solid red;
 }
 .cont div{
     color: black;
     padding: 3px 20px;
-    border-radius: 20px;
     text-decoration: none;
     font-size: 5vh;
 }
-#chart{
+/* #chart{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 80vw; */
     height: 200px;
     border: 2px solid black;
-}
+} */
 input{
-    font-size: 3vh;
-    width: 30%;
-    height: 4vh;
+    display: block;
+    width: 40%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
+.sub{
+    display: flex;
+    border: 2px solid rebeccapurple;
+    align-items: centre;
+    justify-content: center;
+}
+#submit{
+    font-size: 20px;
+    width: 60%;
+}
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+  
 #more{
     font-size: 3vh;
 }
